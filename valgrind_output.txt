@@ -1,0 +1,249 @@
+==4989== Memcheck, a memory error detector
+==4989== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==4989== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==4989== Command: ./build/app/shell-app
+==4989== 
+==4989== Syscall param set_robust_list(head) points to uninitialised byte(s)
+==4989==    at 0x52FEAA: __tls_init_tp (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AAEF9: __libc_setup_tls (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA05D: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==  Address 0x40006f0 is in the brk data segment 0x4000000-0x4000dff
+==4989==  Uninitialised value was created
+==4989==    at 0x52C5DB: brk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x52C673: sbrk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AAE3B: __libc_setup_tls (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA05D: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989== 
+==4989== Conditional jump or move depends on uninitialised value(s)
+==4989==    at 0x5348FE: getrandom (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4DC185: ptmalloc_init.part.0 (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4DEF74: malloc (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x55726A: _dl_get_origin (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x531866: _dl_non_dynamic_init (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x533239: __libc_init_first (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA101: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==  Uninitialised value was created
+==4989==    at 0x52C5DB: brk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x52C673: sbrk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AAE3B: __libc_setup_tls (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA05D: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989== 
+==4989== Conditional jump or move depends on uninitialised value(s)
+==4989==    at 0x4DED81: malloc (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x55726A: _dl_get_origin (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x531866: _dl_non_dynamic_init (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x533239: __libc_init_first (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA101: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==  Uninitialised value was created
+==4989==    at 0x52C5DB: brk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x52C673: sbrk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AAE3B: __libc_setup_tls (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA05D: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989== 
+==4989== Conditional jump or move depends on uninitialised value(s)
+==4989==    at 0x4DEE71: malloc (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x55726A: _dl_get_origin (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x531866: _dl_non_dynamic_init (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x533239: __libc_init_first (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA101: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==  Uninitialised value was created
+==4989==    at 0x52C5DB: brk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x52C673: sbrk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AAE3B: __libc_setup_tls (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA05D: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989== 
+==4989== Conditional jump or move depends on uninitialised value(s)
+==4989==    at 0x4DDB11: _int_malloc (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4DE624: tcache_init.part.0 (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4DEE7B: malloc (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x55726A: _dl_get_origin (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x531866: _dl_non_dynamic_init (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x533239: __libc_init_first (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA101: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==  Uninitialised value was created
+==4989==    at 0x52C5DB: brk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x52C673: sbrk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AAE3B: __libc_setup_tls (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA05D: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989== 
+==4989== Conditional jump or move depends on uninitialised value(s)
+==4989==    at 0x4DED9E: malloc (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x55726A: _dl_get_origin (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x531866: _dl_non_dynamic_init (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x533239: __libc_init_first (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA101: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==  Uninitialised value was created
+==4989==    at 0x52C5DB: brk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x52C673: sbrk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AAE3B: __libc_setup_tls (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA05D: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989== 
+==4989== Conditional jump or move depends on uninitialised value(s)
+==4989==    at 0x4DED9E: malloc (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x552B50: _dl_init_paths (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x531F93: _dl_non_dynamic_init (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x533239: __libc_init_first (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA101: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==  Uninitialised value was created
+==4989==    at 0x52C5DB: brk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x52C673: sbrk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AAE3B: __libc_setup_tls (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA05D: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989== 
+==4989== Conditional jump or move depends on uninitialised value(s)
+==4989==    at 0x4DED9E: malloc (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x552B6D: _dl_init_paths (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x531F93: _dl_non_dynamic_init (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x533239: __libc_init_first (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA101: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==  Uninitialised value was created
+==4989==    at 0x52C5DB: brk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x52C673: sbrk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AAE3B: __libc_setup_tls (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA05D: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989== 
+==4989== Conditional jump or move depends on uninitialised value(s)
+==4989==    at 0x4DED9E: malloc (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x552E29: _dl_init_paths (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x531F93: _dl_non_dynamic_init (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x533239: __libc_init_first (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA101: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==  Uninitialised value was created
+==4989==    at 0x52C5DB: brk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x52C673: sbrk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AAE3B: __libc_setup_tls (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA05D: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989== 
+==4989== Conditional jump or move depends on uninitialised value(s)
+==4989==    at 0x5134A0: __strcspn_sse42 (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x56BA7D: strsep (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x55273E: fillin_rpath.isra.0 (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x552E54: _dl_init_paths (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x531F93: _dl_non_dynamic_init (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x533239: __libc_init_first (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA101: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==  Uninitialised value was created by a stack allocation
+==4989==    at 0x552D30: _dl_init_paths (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989== 
+==4989== Conditional jump or move depends on uninitialised value(s)
+==4989==    at 0x51347A: __strcspn_sse42 (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x56BA7D: strsep (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x55273E: fillin_rpath.isra.0 (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x552E54: _dl_init_paths (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x531F93: _dl_non_dynamic_init (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x533239: __libc_init_first (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA101: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==  Uninitialised value was created by a stack allocation
+==4989==    at 0x552D30: _dl_init_paths (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989== 
+==4989== Conditional jump or move depends on uninitialised value(s)
+==4989==    at 0x4DED9E: malloc (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4E125E: strdup (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x552761: fillin_rpath.isra.0 (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x552E54: _dl_init_paths (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x531F93: _dl_non_dynamic_init (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x533239: __libc_init_first (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA101: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==  Uninitialised value was created
+==4989==    at 0x52C5DB: brk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x52C673: sbrk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AAE3B: __libc_setup_tls (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA05D: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989== 
+==4989== Conditional jump or move depends on uninitialised value(s)
+==4989==    at 0x4DED9E: malloc (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x552874: fillin_rpath.isra.0 (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x552E54: _dl_init_paths (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x531F93: _dl_non_dynamic_init (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x533239: __libc_init_first (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA101: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==  Uninitialised value was created
+==4989==    at 0x52C5DB: brk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x52C673: sbrk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AAE3B: __libc_setup_tls (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA05D: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989== 
+==4989== Conditional jump or move depends on uninitialised value(s)
+==4989==    at 0x4DED9E: malloc (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x54ECCE: _dl_find_object_init (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x5321E7: _dl_non_dynamic_init (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x533239: __libc_init_first (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA101: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==  Uninitialised value was created
+==4989==    at 0x52C5DB: brk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x52C673: sbrk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AAE3B: __libc_setup_tls (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA05D: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989== 
+==4989== Conditional jump or move depends on uninitialised value(s)
+==4989==    at 0x4DED9E: malloc (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x404439: _GLOBAL__sub_I_eh_alloc.cc (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA184: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==  Uninitialised value was created
+==4989==    at 0x52C5DB: brk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x52C673: sbrk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AAE3B: __libc_setup_tls (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA05D: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989== 
+==4989== Conditional jump or move depends on uninitialised value(s)
+==4989==    at 0x4DED9E: malloc (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x540C94: _IO_file_doallocate (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4D5F30: _IO_doallocbuf (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4D506F: _IO_file_overflow (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4D3B46: _IO_file_xsputn (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4CDB77: fwrite (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x46DF53: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x46E31B: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4051E8: main (main.cpp:7)
+==4989==  Uninitialised value was created
+==4989==    at 0x52C5DB: brk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x52C673: sbrk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AAE3B: __libc_setup_tls (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA05D: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989== 
+==4989== Conditional jump or move depends on uninitialised value(s)
+==4989==    at 0x4DED9E: malloc (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x40602B: operator new(unsigned long) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x40507B: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:127)
+==4989==    by 0x404F97: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (alloc_traits.h:464)
+==4989==    by 0x404EDD: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (stl_vector.h:346)
+==4989==    by 0x404D54: std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) (stl_vector.h:361)
+==4989==    by 0x404B08: std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) (stl_vector.h:305)
+==4989==    by 0x40488E: std::vector<int, std::allocator<int> >::vector(unsigned long, int const&, std::allocator<int> const&) (stl_vector.h:524)
+==4989==    by 0x404696: AnalogSensor::Read() (AnalogSensor.cpp:16)
+==4989==    by 0x4051F7: main (main.cpp:7)
+==4989==  Uninitialised value was created
+==4989==    at 0x52C5DB: brk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x52C673: sbrk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AAE3B: __libc_setup_tls (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA05D: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989== 
+==4989== Conditional jump or move depends on uninitialised value(s)
+==4989==    at 0x52B85E: write (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4D338C: _IO_file_write (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4D44FF: _IO_do_write (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4D4FD2: _IO_file_overflow (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x46D988: std::ostream::put(char) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x46DC07: std::basic_ostream<char, std::char_traits<char> >& std::endl<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x405213: main (main.cpp:7)
+==4989==  Uninitialised value was created
+==4989==    at 0x52C5DB: brk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x52C673: sbrk (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AAE3B: __libc_setup_tls (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989==    by 0x4AA05D: (below main) (in /home/amogha/ENPM700/valgrind/cpp-boilerplate-v2/build/app/shell-app)
+==4989== 
+Averaged sensor reading: 10
+==4989== Conditional jump or move depends on uninitialised value(s)
+==4989==    at 0x405218: main (main.cpp:9)
+==4989==  Uninitialised value was created by a stack allocation
+==4989==    at 0x4051A3: main (main.cpp:5)
+==4989== 
+==4989== 
+==4989== HEAP SUMMARY:
+==4989==     in use at exit: 0 bytes in 0 blocks
+==4989==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==4989== 
+==4989== All heap blocks were freed -- no leaks are possible
+==4989== 
+==4989== For lists of detected and suppressed errors, rerun with: -s
+==4989== ERROR SUMMARY: 19 errors from 19 contexts (suppressed: 0 from 0)
